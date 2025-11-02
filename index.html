@@ -897,7 +897,7 @@
                         <span class="product-badge">High Fiber</span>
                     </div>
                     <p class="product-description">60g burger buns fortified with Mung bean flour and whole sprouted Mung beans.</p>
-                    <p class="product-price">LKR 125</p>
+                    <p class="product-price">LKR 120</p>
                     <div class="quantity-selector">
                         <button onclick="changeQuantity('mung-bun', -1)">-</button>
                         <span id="qty-mung-bun">1</span>
@@ -918,7 +918,7 @@
                         <span class="product-badge">High Protein</span>
                     </div>
                     <p class="product-description">30g cookies made with Chickpea flour and naturally sweetened with Jaggery.</p>
-                    <p class="product-price">LKR 65</p>
+                    <p class="product-price">LKR 300</p>
                     <div class="quantity-selector">
                         <button onclick="changeQuantity('gram-cookie', -1)">-</button>
                         <span id="qty-gram-cookie">1</span>
@@ -939,7 +939,7 @@
                         <span class="product-badge">Authentic</span>
                     </div>
                     <p class="product-description">Traditional curry leaf sambol-style paste. The true taste of Lanka.</p>
-                    <p class="product-price">LKR 135</p>
+                    <p class="product-price">LKR 30</p>
                     <div class="quantity-selector">
                         <button onclick="changeQuantity('spicy-paste', -1)">-</button>
                         <span id="qty-spicy-paste">1</span>
@@ -960,7 +960,7 @@
                         <span class="product-badge">High Fiber</span>
                     </div>
                     <p class="product-description">Healthy spread made from rolled oats, peanuts, and Jaggery.</p>
-                    <p class="product-price">LKR 135</p>
+                    <p class="product-price">LKR 30</p>
                     <div class="quantity-selector">
                         <button onclick="changeQuantity('sweet-paste', -1)">-</button>
                         <span id="qty-sweet-paste">1</span>
@@ -1130,15 +1130,19 @@
         </div>
     </section>
 
-    <section id="qr" class="qr-section">
-        <h2>Visit Our Website</h2>
-        <p>Scan the QR code to access our website instantly!</p>
-        <div id="qrcode"></div>
-        <div class="qr-buttons">
-            <button class="btn btn-primary" onclick="downloadQR()">Download QR Code</button>
-            <button class="btn btn-secondary" onclick="generateNewQR()">Regenerate QR</button>
-        </div>
-    </section>
+   <section id="qr" class="qr-section">
+  <h2>Visit Our Website</h2>
+  <p>Scan the QR code to access our website instantly!</p>
+  
+  <div id="qrcode">
+    <img src="images/qrcode.png" alt="Website QR Code" width="200" height="200">
+  </div>
+
+  <div class="qr-buttons">
+    <a href="images/qrcode.png" download="WebsiteQR.png" class="btn btn-primary">Download QR Code</a>
+    <button class="btn btn-secondary" onclick="location.reload()">Regenerate QR</button>
+  </div>
+</section>
 
     <section id="contact" class="contact">
         <h2>Get In Touch</h2>
@@ -1456,4 +1460,5 @@
         window.addEventListener('load', generateQR);
     </script>
 </body>
+
 </html>
